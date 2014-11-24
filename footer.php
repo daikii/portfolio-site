@@ -1,23 +1,23 @@
 <?php global $mixfolio_options;
+
 /**
- * The template for displaying the footer.
+ * Custome header file. Child of Mixfolio theme.
+ * Author: daikii
  *
  * Contains the closing of the id=main div and all content after
  *
  * @package Mixfolio
  */
+
 ?>
 				</div><!-- .twelve -->
 			</div><!-- #main -->
 		</div><!-- .main-outer -->
 
 		<footer id="colophon" class="row" role="contentinfo">
-			<div id="site-generator" class="twelve columns">
-				<a href="http://wordpress.org/" rel="generator">Proudly powered by WordPress</a>
-				<span class="right">
-					<?php printf( __( 'Theme: %1$s by %2$s.', 'theme-name' ), 'Mixfolio', '<a href="http://graphpaperpress.com/" rel="designer">Graph Paper Press</a>' ); ?>
-				</span><!-- .right -->
-			</div><!-- #site-generator -->
+			<h2>
+				TESTTTT
+			</h2>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
