@@ -35,11 +35,7 @@
 					<hgroup>
 						<h1 id="site-title">
 							<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<?php if ( isset( $mixfolio_options[ 'mixfolio_logo' ] ) && '' != $mixfolio_options[ 'mixfolio_logo' ] ) { ?>
-									<img class="sitetitle" id="logo-image-home" src="<?php echo $mixfolio_options[ 'mixfolio_logo' ]; ?>" alt="<?php bloginfo( 'name' ); ?>" />
-								<?php } else {
-									bloginfo( 'name' );
-								} ?>
+								<?php bloginfo( 'name' );?>
 							</a>
 						</h1><!-- #site-title -->
 						<?php if ( '' != get_bloginfo( 'description' ) ) : ?>
