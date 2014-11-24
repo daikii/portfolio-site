@@ -9,4 +9,22 @@
  * Author URI: http://daikii.com
  */
 
+/* import original theme */
  @import url("../mixfolio/style.css");
+
+
+/* ------ OVERWRITE PARENT BELOW ------ */
+
+
+/* header */
+#branding .container {
+
+}
+
+/* header title (Man via Machine) */
+#branding h1 a {
+	float: right;
+	font-family: 'Tangerine', serif;
+	font-size: 55px;
+	margin: 60px 0px 0px;
+}
