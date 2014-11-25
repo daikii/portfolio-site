@@ -12,9 +12,10 @@
 /* import original theme */
  @import url("../mixfolio/style.css");
 
-
-/* ------ OVERWRITE PARENT BELOW ------ */
-
+/* ------------------------
+ * OVERWRITE PARENT BELOW 
+ * ------------------------
+ */
 
 /* header */
 #branding-inner {
@@ -30,8 +31,9 @@
 }
 
 /* body, general */
-body {
+html, body {
 	background-color: #202020;
+	height: 100% !important;
 }
 
 /* footer */
@@ -42,7 +44,14 @@ body {
 	color: #fff;
 }
 
+/* footer font */
+#colophon h2 {
+	color: #fff;
+}
+
 /* footer row, full width */
 footer#colophon.row {
 	max-width: none;
+	position: absolute;
+	bottom: -100%;
 }
