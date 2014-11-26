@@ -21,8 +21,13 @@
 html, body {
 	background-color: #202020;
 	height: 70% !important; /* fit to the page */
-	font-family: 'Tangerine', serif;
+	font-family: 'Crimson Text', serif;
 	color: #FFF;
+}
+
+div.entry-content {
+	font-family: 'Mate SC', serif;
+	font-size: 20px;
 }
 
 /* header */
@@ -48,13 +53,14 @@ html, body {
 /* footer font */
 #colophon h6 {
 	color: #C8C8C8;
-	position: relative;
-	right:-43%;
+	position: absolute;
+	right: 45%;
 }
 
 /* footer row, full width */
 footer#colophon.row {
 	max-width: none;
-	position: absolute;
+/*	position: absolute;
 	bottom: -100%;
+*/
 }
