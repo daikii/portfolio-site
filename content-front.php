@@ -1,18 +1,15 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * Custome front page file.
+ * Author: daikii
  *
  * @package Mixfolio
- *
- * Template Name: Front
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title">
-			<?php the_title(); ?>
-		</h1><!-- .entry-title -->
+		<!-- DELETED -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

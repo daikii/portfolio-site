@@ -16,13 +16,12 @@
 
 get_header(); ?>
 
-		<div id="primary">
+		<div id="primary" class="full-width">
 			<div id="content" role="main">
-				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'front' ); ?>
+				<?php the_post(); ?>
 
-				<?php endwhile; // end of the loop. ?>
+				<?php get_template_part( 'content', 'front' ); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
