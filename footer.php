@@ -15,9 +15,9 @@
 		</div><!-- .main-outer -->
 
 		<footer id="colophon" class="row" role="contentinfo">
-			<h2>
-				TESTTTT
-			</h2>
+			<div id="site-generator" class="twelve columns">
+				<h6>©2014 Man via Machine</h6>
+			</div>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 

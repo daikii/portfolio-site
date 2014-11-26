@@ -17,6 +17,14 @@
  * ------------------------
  */
 
+/* body, general */
+html, body {
+	background-color: #202020;
+	height: 70% !important; /* fit to the page */
+	font-family: 'Tangerine', serif;
+	color: #FFF;
+}
+
 /* header */
 #branding-inner {
 	background-color: #000;
@@ -24,16 +32,10 @@
 
 /* header title (Man via Machine) */
 #branding h1 a {
-	float: right;
-	font-family: 'Tangerine', serif;
 	font-size: 55px;
+	color: #C8C8C8;
+	float: right;
 	margin: 150px 0px 0px;
-}
-
-/* body, general */
-html, body {
-	background-color: #202020;
-	height: 100% !important;
 }
 
 /* footer */
@@ -41,12 +43,13 @@ html, body {
 	background-color: #000;
 	border: none;
 	margin: 0;
-	color: #fff;
 }
 
 /* footer font */
-#colophon h2 {
-	color: #fff;
+#colophon h6 {
+	color: #C8C8C8;
+	position: relative;
+	right:-43%;
 }
 
 /* footer row, full width */
