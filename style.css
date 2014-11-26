@@ -17,14 +17,15 @@
  * ------------------------
  */
 
-/* body, general */
+/* general */
 html, body {
 	background-color: #202020;
 	height: 70% !important; /* fit to the page */
-	font-family: 'Crimson Text', serif;
+	font-family: 'Times New Roman', serif;
 	color: #FFF;
 }
 
+/* front page body */
 div.entry-content {
 	font-family: 'Mate SC', serif;
 	font-size: 20px;
