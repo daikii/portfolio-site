@@ -19,16 +19,28 @@
 
 /* general */
 html, body {
-	background-color: #202020;
+	background-color: #101010;
 	height: 70% !important; /* fit to the page */
 	font-family: 'Times New Roman', serif;
-	color: #FFF;
+	color: #C8C8C8;
+}
+
+/* front page body container */
+.main-outer {
+	margin-top: 5em;
+	margin-bottom: 2em;
 }
 
 /* front page body */
-div.entry-content {
+.entry-content p {
 	font-family: 'Mate SC', serif;
 	font-size: 20px;
+	margin-bottom: 2em;
+}
+
+/* front page image */
+img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img {
+	border: none;
 }
 
 /* header */
