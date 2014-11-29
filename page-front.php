@@ -12,7 +12,7 @@
 get_header(); ?>
 
 		<div id="primary" class="full-width">
-			<div id="content" role="main">
+			<div id="content-front" role="main">
 
 				<?php the_post(); ?>
 

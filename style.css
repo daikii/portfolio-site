@@ -65,9 +65,9 @@ html, body
 	float: right;
 }
 
-/* --------------
- * BODY
- * --------------
+/* -------------------
+ * BODY - FRONT PAGE
+ * -------------------
  */
 
 /* front page body container */
@@ -97,6 +97,17 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
 {
 	border: none;
 	margin-bottom: 0;
+}
+
+/* -------------------
+ * BODY - POSTS
+ * -------------------
+ */
+
+/* width narrower */
+.full-width #content
+{
+	margin: 0 100px;
 }
 
 /* --------------
