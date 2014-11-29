@@ -1,6 +1,6 @@
 <?php
 /**
- * Custome front page file.
+ * Custome front page content file.
  * Author: daikii
  *
  * @package Mixfolio

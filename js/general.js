@@ -20,11 +20,11 @@ $j(document).ready(function()
 	$j('img.alignnone.size-medium').hover(
 		function()
 		{
-			$j(this).fadeTo(500, 0.3);
+			$j(this).fadeTo(300, 0.5);
 		},
-		function() 
+		function()
 		{
-			$j(this).fadeTo(500, 1);
+			$j(this).fadeTo(300, 1);
 		}
 	);
 }); 
