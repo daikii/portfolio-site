@@ -107,7 +107,32 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
 /* width narrower */
 .full-width #content
 {
-	margin: 0 100px;
+	margin: 0 140px;
+}
+
+/* title */
+#content .entry-header .entry-title
+{
+	color: #C8C8C8;
+	font-weight: lighter;
+	margin-bottom: 0;
+}
+
+/* post date */
+#content .entry-header .entry-date
+{
+	color: #606060;
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+/* content font */
+#content .entry-content p
+{
+	font-family: 'Times New Roman', serif;
+	font-size: 17px;
+	letter-spacing: 0.05em;
+	line-height: 25px;
 }
 
 /* --------------

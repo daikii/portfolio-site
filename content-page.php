@@ -1,6 +1,7 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * The custom template used for displaying page content in page.php
+ * Author: daikii
  *
  * @package Mixfolio
  */
@@ -11,6 +12,9 @@
 		<h1 class="entry-title">
 			<?php the_title(); ?>
 		</h1><!-- .entry-title -->
+		<h1 class="entry-date">
+			<?php echo get_the_date(); ?>
+		</h1><!-- .entry-date -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
