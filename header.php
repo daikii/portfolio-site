@@ -1,6 +1,6 @@
 <?php global $mixfolio_options;
 
-/*
+/**
  * Custome header file. Child of Mixfolio theme.
  * Author: daikii
  *
@@ -32,25 +32,22 @@
 		<header id="branding" role="banner" data-dropdown="dropdown">
 			<div id="branding-inner">
 				<div class="container">
-					<hgroup>
-						<h1 id="site-title">
-							<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<?php bloginfo( 'name' );?>
+					<div class="row" id="menu">
+						<h1>
+							<a href="<?php echo home_url( '/' ).'/about/'; ?>">
+								About
 							</a>
-						</h1><!-- #site-title -->
-						<?php if ( '' != get_bloginfo( 'description' ) ) : ?>
-							<h2 id="site-description">
-								<?php bloginfo( 'description' ); ?>
-							</h2><!-- #site-description -->
-						<?php endif; ?>
-					</hgroup>
-
-					<nav role="navigation" class="nav site-navigation main-navigation">
-						<h1 class="assistive-text"><?php _e( 'Menu', 'mixfolio' ); ?></h1>
-						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', '_s' ); ?>"><?php _e( 'Skip to content', 'mixfolio' ); ?></a></div>
-
-						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-					</nav><!-- .nav .site-navigation .main-navigation -->
+						</h1>
+					</div>
+					<div class="row" id="site-title">
+						<hgroup>
+							<h1>
+								<a href="<?php echo home_url( '/' ); ?>">
+									<?php bloginfo( 'name' );?>
+								</a>
+							</h1><!-- #site-title -->
+						</hgroup>
+					</div>
 				</div><!-- .container -->
 			</div><!-- #branding-inner -->
 		</header><!-- #branding -->
