@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Custome page file.
+ * The custom template for displaying all pages.
  * Author: daikii
  *
  * This is the template that displays all pages by default.
@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-		<div id="primary">
+		<div id="primary" class="full-width">
 			<div id="content" role="main">
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -27,5 +27,4 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

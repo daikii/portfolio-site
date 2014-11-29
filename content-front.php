@@ -1,6 +1,6 @@
 <?php
 /**
- * Custome front page content file.
+ * The template used for displaying page content in page-front.php
  * Author: daikii
  *
  * @package Mixfolio
