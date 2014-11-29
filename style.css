@@ -15,7 +15,7 @@
 /* general */
 html, body 
 {
-	background-color: #101010;
+	background-color: #000;
 	height: 70% !important; /* fit to the page */
 	font-family: 'Times New Roman', serif;
 	color: #C8C8C8;
@@ -26,8 +26,14 @@ html, body
  * --------------
  */
 
-/* header */
-#branding-inner 
+ /* eliminate margin */
+#branding
+{
+	margin-bottom: 0;
+}
+
+/* overwrite background */
+#branding-inner
 {
 	background-color: #000;
 }
@@ -67,8 +73,9 @@ html, body
 /* front page body container */
 .main-outer 
 {
-	margin-top: 5em;
-	margin-bottom: 2em;
+	background-color: #101010;
+	padding-top: 5em;
+	padding-bottom: 2em;
 }
 
 /* front page body */
@@ -77,6 +84,12 @@ html, body
 	font-family: 'Mate SC', serif;
 	font-size: 20px;
 	margin-bottom: 2em;
+}
+
+/* bottom margin of image rows larger */
+.entry-content p#im
+{
+	margin-bottom: 3em;
 }
 
 /* front page image */
@@ -91,15 +104,14 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
  * --------------
  */
 
-/* footer */
+/* size */
 #colophon 
 {
-	background-color: #000;
 	border: none;
 	margin: 0;
 }
 
-/* footer font */
+/* font */
 #colophon h6 
 {
 	color: #C8C8C8;
