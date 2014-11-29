@@ -54,12 +54,4 @@
 
 		<div class="main-outer">
 			<div id="main" class="row">
-				<div class="twelve columns">
-					<?php $header_image = get_header_image();
-					if ( ! empty( $header_image ) ) : ?>
-						<div class="header-image">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-							</a>
-						</div><!-- .header-image -->
-					<?php endif; // if ( ! empty( $header_image ) ); ?>
+				<!-- deleted column division and header image -->

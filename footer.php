@@ -10,7 +10,6 @@
  */
 
 ?>
-				</div><!-- .twelve -->
 			</div><!-- #main -->
 		</div><!-- .main-outer -->
 
