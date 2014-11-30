@@ -96,7 +96,8 @@ html, body
 img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img 
 {
 	border: none;
-	margin-bottom: 0;
+	margin: 0 0.3em;
+	padding: 0;
 }
 
 /* -------------------
@@ -108,6 +109,11 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
 .full-width #content
 {
 	margin: 0 140px;
+}
+
+#content .entry-header
+{
+	margin-bottom: 30px;
 }
 
 /* title */
@@ -124,6 +130,7 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
 	color: #606060;
 	font-weight: lighter;
 	font-size: 15px;
+	margin-bottom: 0px;
 }
 
 /* content font */
@@ -133,6 +140,32 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
 	font-size: 17px;
 	letter-spacing: 0.05em;
 	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 1.5em;
+}
+
+/* sub-title */
+#content .entry-content h2
+{
+	color: #C8C8C8;
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+/* bullet list */
+#content .entry-content li
+{
+	font-family: 'Times New Roman', serif;
+	font-size: 17px;
+	letter-spacing: 0.05em;
+	line-height: 25px;
+	text-align: justify;
+}
+
+/* vimeo post */
+.embed-vimeo
+{
+	margin-bottom: 30px;
 }
 
 /* --------------

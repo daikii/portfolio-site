@@ -12,9 +12,13 @@
 		<h1 class="entry-title">
 			<?php the_title(); ?>
 		</h1><!-- .entry-title -->
-		<h1 class="entry-date">
-			<?php echo get_the_date(); ?>
-		</h1><!-- .entry-date -->
+
+		<?php if ('About' != get_the_title()) : ?>
+			<h1 class="entry-date">
+				<?php echo get_the_date(); ?>
+			</h1><!-- .entry-date -->
+		<?php endif; ?>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
