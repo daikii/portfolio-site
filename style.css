@@ -111,6 +111,7 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
 	margin: 0 140px;
 }
 
+/* title+date */
 #content .entry-header
 {
 	margin-bottom: 30px;
@@ -130,7 +131,7 @@ img[class*=align], img[class*=wp-image-], #content .gallery .gallery-icon img
 	color: #606060;
 	font-weight: lighter;
 	font-size: 15px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 /* content font */

@@ -10,8 +10,16 @@ var $j = jQuery.noConflict();
 $j(document).ready(function()
 {
 	// fade in the body contents when page loaded
-	$j('.entry-content').css('display', 'none');
-	$j('.entry-content').fadeIn(1500);
+	$j('#primary').css('display', 'none');
+	$j('#primary').fadeIn(1500);
+
+/*
+	// fade out when relocating page
+	$j('img.alignnone.size-medium').click(function() 
+	{
+		$j('#primary').fadeTo(800, 0.3);
+	});
+*/
 
 	// Animate.css fade-in-down
 	//$j('img.alignnone.size-medium').addClass('animated fadeInDown');
