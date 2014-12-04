@@ -27,7 +27,18 @@ function mixfolio_child_scripts()
 }
 add_action('wp_enqueue_scripts', 'mixfolio_child_scripts');
 
-// page transition css
+// page transition smoothState.js
+function load_transition() 
+{
+	wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/jquery.smoothState.js');
+	//wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/jquery.js');
+	wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/functions.js');
+
+}
+add_action('wp_enqueue_scripts', 'load_transition');
+
+/*
+// page transition elementTransition css
 function load_transition() 
 {
 	wp_enqueue_style('', get_stylesheet_directory_uri() . '/css/elementTransitions.css');
@@ -35,8 +46,6 @@ function load_transition()
 }
 add_action('wp_enqueue_scripts', 'load_transition');
 
-
-/*
 // Animate css
 function load_animate() 
 {

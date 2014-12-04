@@ -9,6 +9,7 @@ var $j = jQuery.noConflict();
 // front page effects
 $j(document).ready(function()
 {
+
 	// fade in the body contents when page loaded
 	//$j('#primary').css('opacity', '0');
 	$j('#primary').hide().fadeTo(1500, 1, 'swing');
