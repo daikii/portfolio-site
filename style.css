@@ -32,7 +32,13 @@ html, body
 	margin-bottom: 0;
 }
 
-/* overwrite background */
+/* header background for slide in purpose */
+#branding
+{
+	background-color: #101010;
+}
+
+/* header background for slide in purpose */
 #branding-inner
 {
 	background-color: #000;
