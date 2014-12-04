@@ -30,13 +30,15 @@ $j(document).ready(function()
 	// fade out when relocating page - image click
 	$j('img.alignnone.size-medium').click(function() 
 	{
-		$j('#primary').fadeTo(400, 0, 'swing');
+		$j('#primary').addClass('pt-page-scaleDown');
+		//$j('#primary').fadeTo(400, 0, 'swing');
 	});
 
 	// fade out when relocating page - header click
 	$j('.container a').click(function() 
 	{
-		$j('#primary').fadeTo(400, 0, 'swing');
+		$j('#primary').addClass('pt-page-scaleDown');
+		//$j('#primary').fadeTo(400, 0, 'swing');
 	});
 
 /*
