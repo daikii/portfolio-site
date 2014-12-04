@@ -11,13 +11,21 @@ $j(document).ready(function()
 {
 
 	// fade in the body contents when page loaded
+	// give buffer to prevent jiggling
 	//$j('#primary').css('opacity', '0');
-	$j('#primary').hide().fadeTo(1500, 1, 'swing');
+	$j('#primary').hide().delay(300).fadeTo(1500, 1, 'swing');
 
-	// fade out when relocating page
+	// NOTE fade out: loop all href and .attr()?
+	// fade out when relocating page - images
 	$j('img.alignnone.size-medium').click(function() 
 	{
-		$j('#primary').fadeTo(800, 0, 'swing');
+		$j('#primary').fadeTo(400, 0, 'swing');
+	});
+
+	// fade out when relocating page - header
+	$j('.container a').click(function() 
+	{
+		$j('#primary').fadeTo(400, 0, 'swing');
 	});
 
 /*
