@@ -6,14 +6,22 @@
 // shortcut for jQuery as $ cannot be used
 var $j = jQuery.noConflict();
 
+// current site URL
+var url = window.location.href;
+
 // front page effects
 $j(document).ready(function()
 {
+	// header slide in for the main menu
+	if (url === 'http://daikii.com/')
+	{
+		$j('header#branding').addClass('pt-page-moveFromTopFade');
+	}
 
 	// fade in the body contents when page loaded
 	// give buffer to prevent jiggling
 	//$j('#primary').css('opacity', '0');
-	$j('#primary').hide().delay(300).fadeTo(1500, 1, 'swing');
+	$j('#primary').hide().delay(500).fadeTo(1500, 1, 'swing');
 
 	// NOTE fade out: loop all href and .attr()?
 	// fade out when relocating page - images

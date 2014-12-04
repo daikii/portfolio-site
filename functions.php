@@ -37,15 +37,15 @@ function load_transition()
 }
 add_action('wp_enqueue_scripts', 'load_transition');
 
-/*
 // page transition elementTransition css
-function load_transition() 
+function load_transition_elem() 
 {
 	wp_enqueue_style('', get_stylesheet_directory_uri() . '/css/elementTransitions.css');
 	wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/elementTransitions.js');
 }
-add_action('wp_enqueue_scripts', 'load_transition');
+add_action('wp_enqueue_scripts', 'load_transition_elem');
 
+/*
 // Animate css
 function load_animate() 
 {
