@@ -45,15 +45,15 @@ function load_elementTransition()
 }
 add_action('wp_enqueue_scripts', 'load_elementTransition');
 
-/*
 // header animation
 function load_headroom() 
 {
 	wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/headroom.js');
+	wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/jquery.headroom.js');
 }
 add_action('wp_enqueue_scripts', 'load_headroom');
 
-
+/*
 // Animate css
 function load_animate() 
 {

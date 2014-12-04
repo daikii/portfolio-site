@@ -41,6 +41,10 @@ $j(document).ready(function()
 		//$j('#primary').fadeTo(400, 0, 'swing');
 	});
 
+	//$j('header').addClass('headroom');
+	//$j('#branding').addClass('headroom headroom--pinned');
+	//$j('#header').headroom();
+
 /*
 	// page transition using elementTransition.css
 	$j('#primary').addClass('et-wrapper et-rotate'); 
