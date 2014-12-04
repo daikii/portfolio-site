@@ -26,19 +26,18 @@ html, body
  * --------------
  */
 
- /* eliminate margin */
 #branding
 {
+	/* eliminate margin */
 	margin-bottom: 0;
-}
-
-/* header background for slide in purpose */
-#branding
-{
+	/* header background for slide in purpose */
 	background-color: #101010;
+	/* sticky header */
+	position: fixed;
+	width: 100%;
 }
 
-/* header background for slide in purpose */
+/* header background for slide-in purpose */
 #branding-inner
 {
 	background-color: #000;
