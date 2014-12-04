@@ -79,7 +79,7 @@ html, body
 .main-outer 
 {
 	background-color: #101010;
-	padding-top: 5em;
+	padding-top: 27em; /* for sticky header */
 	padding-bottom: 2em;
 }
 

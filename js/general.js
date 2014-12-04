@@ -9,6 +9,8 @@ var $j = jQuery.noConflict();
 // current site URL
 var url = window.location.href;
 
+var doc = document.documentElement;
+
 $j(document).ready(function()
 {
 	// header slide in for the main menu
@@ -41,9 +43,19 @@ $j(document).ready(function()
 		//$j('#primary').fadeTo(400, 0, 'swing');
 	});
 
-	//$j('header').addClass('headroom');
-	//$j('#branding').addClass('headroom headroom--pinned');
-	//$j('#header').headroom();
+	$j(window).scroll(function()
+	{
+		var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+	
+		if (top > 100)
+		{
+			$j('#site-title.row').css('margin-top', '10px');
+		}
+		else
+		{
+			$j('#site-title.row').css('margin-top', '120px');
+		}
+	});
 
 /*
 	// page transition using elementTransition.css
