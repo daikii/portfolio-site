@@ -26,6 +26,7 @@ html, body
  * --------------
  */
 
+/* top DOM */
 #branding
 {
 	/* eliminate margin */
@@ -35,6 +36,10 @@ html, body
 	/* sticky header */
 	position: fixed;
 	width: 100%;
+	/* transparent when scrolled */
+	opacity: 1;
+	/* always on top */
+	z-index: 999;
 }
 
 /* header background for slide-in purpose */
@@ -79,7 +84,7 @@ html, body
 .main-outer 
 {
 	background-color: #101010;
-	padding-top: 27em; /* for sticky header */
+	padding-top: 26em; /* for sticky header */
 	padding-bottom: 2em;
 }
 

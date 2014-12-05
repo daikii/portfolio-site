@@ -9,7 +9,9 @@ var $j = jQuery.noConflict();
 // current site URL
 var url = window.location.href;
 
-var doc = document.documentElement;
+// for minimizing header when scrolled
+var doc = document.documentElement; // grab element
+var mark = 0; // marking for header minimize
 
 $j(document).ready(function()
 {
@@ -17,14 +19,13 @@ $j(document).ready(function()
 	if (url === 'http://daikii.com/')
 	{
 		// elementTransition.js
-		$j('div#branding-inner').addClass('pt-page-moveFromTopFade');
-		// fade in
+		$j('#branding-inner').addClass('pt-page-moveFromTopFade');
+		// fade-in
 		$j('#primary').hide().delay(800).fadeTo(1500, 1, 'swing');
 	}
 	else
 	{
-		// fade in the body contents when page loaded. give buffer to prevent jiggling.
-		//$j('#primary').css('opacity', '0');
+		// fade in the body contents when page loaded. give buffer to prevent unstability.
 		$j('#primary').hide().delay(400).fadeTo(1500, 1, 'swing');
 	}
 
@@ -33,31 +34,42 @@ $j(document).ready(function()
 	$j('img.alignnone.size-medium').click(function() 
 	{
 		$j('#primary').addClass('pt-page-scaleDown');
-		//$j('#primary').fadeTo(400, 0, 'swing');
 	});
 
 	// fade out when relocating page - header click
 	$j('.container a').click(function() 
 	{
 		$j('#primary').addClass('pt-page-scaleDown');
-		//$j('#primary').fadeTo(400, 0, 'swing');
 	});
 
+	// minimize header when scrolled
 	$j(window).scroll(function()
 	{
-		var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-	
-		if (top > 100)
+		// amount scrolled
+		var top = window.pageYOffset || doc.scrollTop;
+
+		if (mark === 0 && top > 100)
 		{
-			$j('#site-title.row').css('margin-top', '10px');
+			$j('#site-title.row').animate({marginTop:'0px'});
+			$j('#branding').css('opacity', '0.8');
+			mark = 1;
 		}
-		else
+		else if (mark === 1 && top < 85)
 		{
-			$j('#site-title.row').css('margin-top', '120px');
+			$j('#site-title.row').animate({marginTop:'120px'});
+			$j('#branding').css('opacity', '1');
+			mark = 0;
 		}
 	});
 
 /*
+	// fade in
+	$j('#primary').css('opacity', '0');
+	$j('#primary').hide().delay(400).fadeTo(1500, 1, 'swing');
+
+	// fade out
+	$j('#primary').fadeTo(400, 0, 'swing');
+
 	// page transition using elementTransition.css
 	$j('#primary').addClass('et-wrapper et-rotate'); 
 	$j('#primary').addClass('pt-page-scaleUp');

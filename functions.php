@@ -45,6 +45,7 @@ function load_elementTransition()
 }
 add_action('wp_enqueue_scripts', 'load_elementTransition');
 
+/*
 // header animation
 function load_headroom() 
 {
@@ -53,7 +54,6 @@ function load_headroom()
 }
 add_action('wp_enqueue_scripts', 'load_headroom');
 
-/*
 // Animate css
 function load_animate() 
 {
