@@ -10,7 +10,7 @@
  */
 
 /* import original theme */
- @import url("../mixfolio/style.css");
+@import url("../mixfolio/style.css");
 
 /* general */
 html, body 
@@ -206,4 +206,38 @@ footer#colophon.row
 /*	position: absolute;
 	bottom: -100%;
 */
+}
+
+/* -------------------------
+ * MEDIA QUERY FOR MOBILES
+ * -------------------------
+ */
+
+@media only screen and (max-width: 767px)
+{
+	.entry-content p 
+	{
+		font-size: 10px;
+		margin-bottom: 0;
+	}
+	.entry-content p#im
+	{
+		margin-bottom: 1em;
+	}
+	#site-title.row
+	{
+		margin-top: 0px;
+	}
+	#menu.row
+	{
+		margin-top: 5px;
+	}
+	#site-title h1 a 
+	{
+		font-size: 30px;
+	}
+	.main-outer 
+	{
+		padding: 130px 0 0 !important; 
+	}
 }
