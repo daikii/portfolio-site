@@ -13,6 +13,10 @@ var url = window.location.href;
 var doc = document.documentElement; // grab element
 var mark = 0; // marking for header minimize
 
+// for responsive image
+var maxWidth = 980;
+var currWidth = $j(window).width(); 
+
 $j(document).ready(function()
 {
 	// header slide in for the main menu
@@ -30,8 +34,8 @@ $j(document).ready(function()
 	}
 
 	// NOTE fade out: loop all href and .attr()?
-	// fade out when relocating page - image click
-	$j('img.alignnone.size-medium').click(function() 
+	// fade out when relocating page - frant page image click
+	$j('#content-front img.alignnone.size-medium').click(function() 
 	{
 		$j('#primary').addClass('pt-page-scaleDown');
 	});
@@ -62,6 +66,41 @@ $j(document).ready(function()
 		}
 	});
 
+	// init front page responsive images
+	var perc = 30 * (currWidth / maxWidth);
+	if (perc < 100)
+	{
+		$j('#content-front img.alignnone.size-medium').css('max-width', perc + '%');
+	}
+
+	// front page responsive images when browser size changed
+	if (url === 'http://daikii.com/')
+	{
+		$j(window).resize(function() 
+		{
+			currWidth = $j(window).width();
+			perc = 30 * (currWidth / maxWidth);
+
+			if (perc < 100)
+			{
+				$j('#content-front img.alignnone.size-medium').css('max-width', perc + '%');
+			}
+		});
+	}
+
+	// image fade when cursor hovered
+	$j('#content-front img.alignnone.size-medium').hover(
+		function()
+		{
+			$j(this).fadeTo(300, 0.5);
+		},
+		function()
+		{
+			$j(this).fadeTo(300, 1);
+		}
+	);
+}); 
+
 /*
 	// fade in
 	$j('#primary').css('opacity', '0');
@@ -77,16 +116,3 @@ $j(document).ready(function()
 	// fade-in-down using Animate.css 
 	$j('img.alignnone.size-medium').addClass('animated fadeInDown');
 */
-
-	// image fade when cursor hovered
-	$j('img.alignnone.size-medium').hover(
-		function()
-		{
-			$j(this).fadeTo(300, 0.5);
-		},
-		function()
-		{
-			$j(this).fadeTo(300, 1);
-		}
-	);
-}); 
