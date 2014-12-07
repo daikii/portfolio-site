@@ -226,7 +226,7 @@ footer#colophon.row
 	}
 	#site-title.row
 	{
-		margin-top: 0px;
+		margin-top: 0px !important;
 	}
 	#menu.row
 	{
