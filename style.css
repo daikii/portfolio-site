@@ -42,6 +42,11 @@ html, body
 	z-index: 999;
 }
 
+h1
+{
+	margin-bottom: 0px;
+}
+
 /* header background for slide-in purpose */
 #branding-inner
 {
@@ -60,19 +65,21 @@ html, body
 	margin-top: 120px;
 }
 
-/* top menu font */
-#menu h1 a 
+/* site menu text (About) */
+#menu h1 a
 {
 	font-size: 15px;
 	color: #C8C8C8;
+	padding: 0px 0px 0px 30px
 }
 
-/* site title font (Man via Machine) */
+/* site title text (Man via Machine) */
 #site-title h1 a 
 {
 	font-size: 55px;
 	color: #C8C8C8;
 	float: right;
+	padding: 0px 20px 12px
 }
 
 /* -------------------
@@ -84,7 +91,7 @@ html, body
 .main-outer 
 {
 	background-color: #101010;
-	padding-top: 350px; /* for sticky header */
+	padding-top: 270px; /* for sticky header */
 	padding-bottom: 2em;
 }
 

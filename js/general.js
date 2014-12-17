@@ -35,7 +35,7 @@ $j(document).ready(function()
 
 	// NOTE fade out: loop all href and .attr()?
 	// fade out when relocating page - frant page image click
-	$j('#content-front img.alignnone.size-medium').click(function() 
+	$j('#content-front img[class*=align]').click(function() 
 	{
 		$j('#primary').addClass('pt-page-scaleDown');
 	});
@@ -46,11 +46,12 @@ $j(document).ready(function()
 		$j('#primary').addClass('pt-page-scaleDown');
 	});
 
+/*
 	// init front page responsive images
 	var perc = 30 * (currWidth / maxWidth);
 	if (perc < 100)
 	{
-		$j('#content-front img.alignnone.size-medium').css('max-width', perc + '%');
+		$j('#content-front img[class*=align]').css('max-width', perc + '%');
 	}
 
 	// front page responsive images when browser size changed
@@ -63,10 +64,11 @@ $j(document).ready(function()
 
 			if (perc < 100)
 			{
-				$j('#content-front img.alignnone.size-medium').css('max-width', perc + '%');
+				$j('#content-front img[class*=align]').css('max-width', perc + '%');
 			}
 		});
 	}
+*/
 
 	// minimize header when scrolled
 	$j(window).scroll(function()
@@ -94,7 +96,7 @@ $j(document).ready(function()
 	});
 
 	// image fade when cursor hovered
-	$j('#content-front img.alignnone.size-medium').hover(
+	$j('#content-front img[class*=align]').hover(
 		function()
 		{
 			$j(this).fadeTo(300, 0.5);
