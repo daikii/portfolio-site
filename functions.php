@@ -8,10 +8,11 @@
 // Google Font stylesheet
 function load_fonts() 
 {
-	wp_register_style('et-googleFonts', 'http://fonts.googleapis.com/css?family=Codystar|Gilda+Display|Mate+SC|Libre+Baskerville|Cinzel');
-	wp_enqueue_style('et-googleFonts');
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:100,300|Josefin+Sans:100,300');
+	wp_enqueue_style( 'googleFonts');
 }
 add_action('wp_print_styles', 'load_fonts');
+
 
 // custom favicon 
 function blog_favicon() 
@@ -20,12 +21,14 @@ function blog_favicon()
 }
 add_action('wp_head', 'blog_favicon');
 
+
 // load js scripts
 function mixfolio_child_scripts() 
 {
 	wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/general.js');
 }
 add_action('wp_enqueue_scripts', 'mixfolio_child_scripts');
+
 
 // page transition smoothState.js
 function load_smoothState() 
@@ -37,6 +40,7 @@ function load_smoothState()
 }
 add_action('wp_enqueue_scripts', 'load_smoothState');
 
+
 // page transition elementTransition css
 function load_elementTransition() 
 {
@@ -44,6 +48,7 @@ function load_elementTransition()
 	wp_enqueue_script('', get_stylesheet_directory_uri() . '/js/elementTransitions.js');
 }
 add_action('wp_enqueue_scripts', 'load_elementTransition');
+
 
 /*
 // header animation

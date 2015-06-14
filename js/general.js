@@ -33,8 +33,21 @@ $j(document).ready(function()
 		$j('#primary').hide().delay(400).fadeTo(1500, 1, 'swing');
 	}
 
+		// image fade when cursor hovered
+	$j('#content-front img[class*=align]').hover(
+		function()
+		{
+			$j(this).fadeTo(300, 0.5);
+		},
+		function()
+		{
+			$j(this).fadeTo(300, 1);
+		}
+	);
+
+/*
 	// NOTE fade out: loop all href and .attr()?
-	// fade out when relocating page - frant page image click
+	// fade out when relocating page - front page image click
 	$j('#content-front img[class*=align]').click(function() 
 	{
 		$j('#primary').addClass('pt-page-scaleDown');
@@ -46,7 +59,6 @@ $j(document).ready(function()
 		$j('#primary').addClass('pt-page-scaleDown');
 	});
 
-/*
 	// init front page responsive images
 	var perc = 30 * (currWidth / maxWidth);
 	if (perc < 100)
@@ -68,7 +80,6 @@ $j(document).ready(function()
 			}
 		});
 	}
-*/
 
 	// minimize header when scrolled
 	$j(window).scroll(function()
@@ -94,18 +105,7 @@ $j(document).ready(function()
 			}
 		}
 	});
-
-	// image fade when cursor hovered
-	$j('#content-front img[class*=align]').hover(
-		function()
-		{
-			$j(this).fadeTo(300, 0.5);
-		},
-		function()
-		{
-			$j(this).fadeTo(300, 1);
-		}
-	);
+*/
 }); 
 
 /*

@@ -1,5 +1,4 @@
 <?php global $mixfolio_options;
-
 /**
  * Custome header file. Child of Mixfolio theme.
  * Author: daikii
@@ -8,7 +7,6 @@
  *
  * @package Mixfolio
  */
-
 ?><!DOCTYPE html>
 <!--[if IE 8]>
 <html id="ie8" <?php language_attributes(); ?>>
@@ -32,13 +30,6 @@
 		<header id="branding" role="banner" data-dropdown="dropdown">
 			<div id="branding-inner">
 				<div class="container">
-					<div class="row" id="menu">
-						<h1>
-							<a href="<?php echo home_url( '/' ).'/about/'; ?>">
-								About
-							</a>
-						</h1>
-					</div>
 					<div class="row" id="site-title">
 						<hgroup>
 							<h1>
@@ -47,6 +38,13 @@
 								</a>
 							</h1><!-- #site-title -->
 						</hgroup>
+					</div>
+					<div class="row" id="menu">
+						<h1>
+							<a href="<?php echo home_url( '/' ).'/about/'; ?>">
+								About
+							</a>
+						</h1>
 					</div>
 				</div><!-- .container -->
 			</div><!-- #branding-inner -->
